@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font1: "Libre Franklin", sans-serif;
+    --cor1: #E3DEC8;
+}
+
+body{
+    background-color: var(--cor1);
+}
+
+.site{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* HEADER COMEÇO */
+header{
+    background-color: var(--cor1);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px;
+    width: 100%;
+    background-image: url(./img/fundoHeader.png);
+}
+
+header img{
+    width: 70px;
+}
+
+header nav a{
+    font-family: var(--font1);
+    font-weight: Regular;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    text-align: center;
+}
+
+nav{
+    display: flex;
+}
+
+.ajusteImg{
+    display: flex;
+    align-items: center;
+}
+
+nav div{
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+nav div a:hover{
+    transform: translateY(-5px);
+    transition-duration: 0.3s;
+}
+
+
+/* HEADER FINAL */
+
+/* SECTION PRINCIPAL COMEÇO */
+
+section div{
+    display: flex;
+    margin-top: 50px;
+}
+
+section div h1{
+    margin: 0px 20px;
+    font-family: var(--font1);
+    font-weight: lighter;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    text-align: center;
+}
+
+.informacoes{
+    display: flex;
+    flex-direction: column;
+}
+
+.informacoes h2{
+    font-family: var(--font1);
+    font-size: 44px;
+}
+
+.caracteristicas {
+    display: flex;
+    align-items: center;
+}
+
+.caracteristicas img {
+    margin-right: 10px; 
+}
+
+.caracteristicas h3 {
+    margin-right: 10px; 
+    margin-bottom: 0; 
+    font-family: var(--font1);
+    font-weight: lighter;
+}
+
+.poster{
+    margin-right: 30px;
+}
+
+.sinopse{
+    font-family: var(--font1);
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+.linhaSepara img{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 5px;
+    margin: 30px auto;
+}
+
+.disponivel h2{
+    font-family: var(--font1);
+    font-weight: lighter;
+}
+
+.streamings img:hover{
+    transform: translateY(-5px);
+    transition-duration: 0.3s;
+}
+
+.barra-de-duracao {
+    width: 100%; /* Define a largura da barra de duração */
+    height: 10px; /* Define a altura da barra de duração */
+  }
+  
+  /* Estilo padrão para a tag progress */
+  .barra-de-duracao progress {
+    width: 100%;
+    height: 100%;
+    appearance: none; /* Remove o estilo padrão do navegador */
+    border: none;
+    background-color: #f0f0f0; /* Cor de fundo da barra de duração */
+    border-radius: 10px;
+  }
+  
+  /* Estiliza a barra de progresso preenchida */
+  .barra-de-duracao progress::-webkit-progress-value {
+    background-color: #494949; /* Cor da barra de progresso preenchida */
+    border-radius: 10px;
+  }
+  
+  /* Estiliza a barra de progresso não preenchida */
+  .barra-de-duracao progress::-webkit-progress-bar {
+    background-color: #f0f0f0; /* Cor da barra de progresso não preenchida */
+    border-radius: 10px;
+  }
+/* SECTION PRINCIPAL FINAL */
